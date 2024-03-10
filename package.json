@@ -18,8 +18,8 @@
     "build": "rollup -c",
     "dev": "karma start --auto-watch --no-single-run --browsers chrome",
     "dev:ff": "karma start --auto-watch --no-single-run --browsers firefox",
-    "docs": "npm run build && vuepress build docs --no-cache",
-    "docs:dev": "concurrently \"npm run autobuild\" \"vuepress dev docs --no-cache\"",
+    "docs": "npm run build && typedoc && vitepress build docs",
+    "docs:dev": "npm run autobuild && typedoc && vitepress dev docs",
     "lint-js": "eslint \"samples/**/*.html\" \"test/**/*.js\" \"src/**/*.js\"",
     "lint-md": "eslint \"**/*.md\"",
     "lint-tsc": "tsc",
@@ -74,11 +74,7 @@
     "typedoc": "^0.26.11",
     "typedoc-plugin-markdown": "^4.2.10",
     "typescript": "^5.6.3",
-    "vuepress": "^1.8.2",
-    "vuepress-plugin-flexsearch": "^0.3.0",
-    "vuepress-plugin-redirect": "^1.2.5",
-    "vuepress-plugin-typedoc": "^0.9.2",
-    "vuepress-theme-chartjs": "^0.2.0"
+    "vitepress": "^1.0.0-rc.45"
   },
   "peerDependencies": {
     "chart.js": ">=3.2.0"
