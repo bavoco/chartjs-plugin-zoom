@@ -27,11 +27,11 @@ button {
 button:hover {
   background-color: rgba(48,128,208,.15);
   border-color: rgba(48,128,208,.2);
-  color: #3080d0
+  color: #3080d0;
 }
 
 button:active {
   background-color: rgba(48,128,208,.3);
   border-color: rgba(48,128,208,.4);
-  color: #3080d0
+  color: #3080d0;
 }
